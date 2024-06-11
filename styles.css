@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f0f0f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+.nav a:hover {
+    background: #333;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #1d1c1c;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.features {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #0044cc;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambiamos a tres columnas */
+    gap: 20px;
+
+}
+
+.feature:nth-child(3) {
+    grid-column: span 2; /* La tercera característica se extiende a través de dos columnas */
+}
+
+
+
+.feature {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.feature button {
+    padding: 10px 20px;
+    border: none;
+    background: #0044cc;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.feature button:hover {
+    background: #003399;
+}
+
+.footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
